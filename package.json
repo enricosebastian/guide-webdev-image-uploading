@@ -1,0 +1,25 @@
+{
+  "name": "guide-webdev-image-uploading",
+  "version": "1.0.0",
+  "description": "Basic MVC template for deployed websites that use image uploading and downloading",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enricosebastian/guide-webdev-image-uploading.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enricosebastian/guide-webdev-image-uploading/issues"
+  },
+  "homepage": "https://github.com/enricosebastian/guide-webdev-image-uploading#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15"
+  }
+}
