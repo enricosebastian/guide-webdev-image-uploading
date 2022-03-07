@@ -1,7 +1,15 @@
-# guide-webdev-image-uploading
-Basic MVC template for deployed websites that use image uploading and downloading
+# Web development guide for image uploading using Firebase Storage
+Welcome! This is a basic repo template for projects involving uploading images to Firebase Storage.
 
-Working deployed website (As of 2022-03-07): https://image-uploading-site.herokuapp.com/
+** Working website (As of 2022-03-07):** ` https://image-uploading-site.herokuapp.com/ `
 
-References used:
-https://www.youtube.com/watch?v=-IFRVMEhZDc
+## References used:
+` https://www.youtube.com/watch?v=-IFRVMEhZDc `
+
+## Tech used:
+- EJS
+- Express
+- Express-fileupload
+- Firebase
+- MySQL (ClearDB)
+- Heroku
