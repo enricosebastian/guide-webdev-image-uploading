@@ -3,9 +3,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= username %></title>
+    <title><%= rows[0].username %></title>
 </head>
 <body>
-    <p>this is the user</p>
+    <% if(rows[0].profile_image == null) { %>
+        <p>[no image]</p>
+    <% } else { %>
+        <p><img src="<%= rows[0].profile_image %>" alt=""></p>
+    <% } %>
+    <h1><%= rows[0].username %></h1>
+    <p>This is <%= rows[0].username %>. <%= rows[0].bio %></p>
+    
+    <form action='/uploadImg' method="POST" enctype="multipart/form-data">
+        <input type="file" name="imgfile" accept="image/*" required>
+        <input type="hidden" name="username" value="<%= rows[0].username %>">
+        <input type="submit" value="upload img">
+    </form>
 </body>
 </html>

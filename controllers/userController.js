@@ -21,12 +21,12 @@ const userController = {
                 connection.query('SELECT * FROM users WHERE username = ?',[req.params.username],(err,rows)=>{
                     if(!err) {
                         console.log('Succesful request of '+req.path);
-                        res.send({rows});
+                        res.render('profile',{rows});
                     } else throw err;
                 });
             } else throw err;
         })
     }
-}
+};
 
 module.exports = userController;

@@ -8,6 +8,6 @@ const controller = {
     getAbout: (req,res)=>{
         res.render('about');
     }
-}
+};
 
 module.exports = controller;
