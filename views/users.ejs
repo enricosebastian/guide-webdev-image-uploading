@@ -6,7 +6,9 @@
     <title>Home page</title>
 </head>
 <body>
-    <h1>Welcome home</h1>
-    <p>This is the home page</p>
+    <h1>Existing users</h1>
+    <% for(var i = 0; i < rows.length; i++) { %>
+        <p><a href='/user/<%= rows[i].username %>'><%= rows[i].username %></a></p>
+    <% } %>
 </body>
 </html>

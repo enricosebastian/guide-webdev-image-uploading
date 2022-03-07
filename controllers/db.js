@@ -11,6 +11,4 @@ const pool = mysql.createPool({
     database:           process.env.DATABASE
 });
 
-module.exports = {
-    pool: pool
-};
+module.exports = pool;
