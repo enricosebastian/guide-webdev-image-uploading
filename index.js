@@ -32,7 +32,7 @@ app.get('/',(req,res)=>{
         connection.query('SELECT * FROM users',(err,rows)=>{
             connection.release(); //once done, disconnect to prevent lag
             if(!err) {
-                res.render('index');
+                res.render('index',{rows});
             } else throw err;
         });
     });
